@@ -1,0 +1,297 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.contenedor-flex {
+  background: rgb(247, 209, 209);
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-header {
+  color: rgb(138, 16, 138);
+  font-size: 20px;
+  padding-left: 20px;
+  display: flex;
+}
+.logo-header i {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.menu-header {
+  margin: auto;
+}
+
+.menu-item {
+  text-decoration: none;
+  margin: auto 10px;
+  text-align: center;
+}
+
+.menu-item:hover {
+  border-bottom: blueviolet solid;
+}
+
+.banner {
+  height: 500px;
+  background-image: url("../img/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-banner {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
+
+.parrafo-banner {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.boton-banner {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  background: rgb(247, 209, 209);
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.bienvenidos {
+  display: flex;
+  padding-top: 0;
+}
+
+.logo-bienvenidos {
+  width: 400px;
+  height: 300px;
+}
+
+.textos-bienvenidos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-bienvenidos {
+  color: rgb(138, 16, 138);
+  font-size: 35px;
+}
+
+.texto-bienvenidos {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(138, 16, 138);
+  font-size: 20px;
+}
+
+.text-galeria {
+  text-align: center;
+  color: rgb(138, 16, 138);
+  font-size: 40px;
+  background: rgb(222, 224, 224);
+}
+
+.menu-ofrecemos {
+  background: rgb(222, 224, 224);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu-ofrecemos img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px rgba(82, 82, 83, 0.5);
+}
+
+.titulo-ofrecemos {
+  font-size: 15px;
+  color: rgb(138, 16, 138);
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer {
+  height: 100px;
+  background: rgb(247, 209, 209);
+  justify-content: space-between;
+}
+
+.redes-sociales {
+  display: block;
+  font-size: 40px;
+  text-align: right;
+}
+
+.redes-sociales i {
+  margin-right: 30px;
+  color: rgb(138, 16, 138);
+}
+
+.galeria-imagenes {
+  background: rgb(222, 224, 224);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagenes {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(138, 16, 138);
+}
+
+.imagenes img {
+  object-fit: cover;
+  width: 70%;
+  height: 300px;
+  box-shadow: 0 0 6px 2px rgba(82, 82, 83, 0.5);
+}
+
+.contactanos {
+  background: rgb(222, 224, 224);
+  display: block;
+  padding: 40px 0px;
+}
+
+.titulo-contactanos {
+  text-align: center;
+  color: rgb(138, 16, 138);
+}
+
+.texto-contactanos {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(138, 16, 138);
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.mensaje {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(138, 16, 138);
+  margin-bottom: 20px;
+}
+
+.mapa {
+  border: 1px solid black;
+}
+.direccion {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.direccion p,
+.telefono p,
+.email p {
+  margin-left: 10px;
+}
+
+.telefono {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-header {
+    font-size: 12px;
+  }
+
+  .logo-header i {
+    font-size: 15px;
+    justify-content: center;
+    padding-right: 3px;
+  }
+
+  .menu-item {
+    font-size: 12px;
+    margin: auto 5px;
+  }
+  .bienvenidos {
+    display: block;
+    padding-top: 0;
+  }
+
+  .titulo-bienvenidos {
+    font-size: 22px;
+  }
+
+  .texto-bienvenidos {
+    font-size: 13px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .bienvenidos {
+    display: flex;
+  }
+
+  .logo-bienvenidos {
+    width: 200px;
+    height: 200px;
+  }
+
+  .banner {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .titulo-banner {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+  }
+
+  .parrafo-banner {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+  }
+}
